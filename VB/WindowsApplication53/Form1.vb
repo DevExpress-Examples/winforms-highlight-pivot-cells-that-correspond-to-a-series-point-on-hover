@@ -22,27 +22,22 @@ Namespace WindowsApplication53
 		End Sub
 		Private Sub PopulateTable()
 			Dim myTable As DataTable = dataSet1.Tables("Data")
-			myTable.Rows.Add(New Object() { "Aaa", DateTime.Today, 7 })
-			myTable.Rows.Add(New Object() { "Aaa", DateTime.Today.AddDays(1), 4 })
-			myTable.Rows.Add(New Object() { "Bbb", DateTime.Today, 12 })
-			myTable.Rows.Add(New Object() { "Bbb", DateTime.Today.AddDays(1), 14 })
-			myTable.Rows.Add(New Object() { "Ccc", DateTime.Today, 11 })
-			myTable.Rows.Add(New Object() { "Ccc", DateTime.Today.AddDays(1), 10 })
+			myTable.Rows.Add(New Object() {"Aaa", DateTime.Today, 7})
+			myTable.Rows.Add(New Object() {"Aaa", DateTime.Today.AddDays(1), 4})
+			myTable.Rows.Add(New Object() {"Bbb", DateTime.Today, 12})
+			myTable.Rows.Add(New Object() {"Bbb", DateTime.Today.AddDays(1), 14})
+			myTable.Rows.Add(New Object() {"Ccc", DateTime.Today, 11})
+			myTable.Rows.Add(New Object() {"Ccc", DateTime.Today.AddDays(1), 10})
 
-			myTable.Rows.Add(New Object() { "Aaa", DateTime.Today.AddDays(3), 4 })
-			myTable.Rows.Add(New Object() { "Aaa", DateTime.Today.AddDays(2), 2 })
-			myTable.Rows.Add(New Object() { "Bbb", DateTime.Today.AddDays(3), 3 })
-			myTable.Rows.Add(New Object() { "Bbb", DateTime.Today.AddDays(2), 1 })
-			myTable.Rows.Add(New Object() { "Ccc", DateTime.Today.AddDays(3), 8 })
-			myTable.Rows.Add(New Object() { "Ccc", DateTime.Today.AddDays(2), 22 })
+			myTable.Rows.Add(New Object() {"Aaa", DateTime.Today.AddDays(3), 4})
+			myTable.Rows.Add(New Object() {"Aaa", DateTime.Today.AddDays(2), 2})
+			myTable.Rows.Add(New Object() {"Bbb", DateTime.Today.AddDays(3), 3})
+			myTable.Rows.Add(New Object() {"Bbb", DateTime.Today.AddDays(2), 1})
+			myTable.Rows.Add(New Object() {"Ccc", DateTime.Today.AddDays(3), 8})
+			myTable.Rows.Add(New Object() {"Ccc", DateTime.Today.AddDays(2), 22})
 		End Sub
 
-		Private Sub pivotGridControl1_CustomChartDataSourceData(ByVal sender As Object, ByVal e As DevExpress.XtraPivotGrid.PivotCustomChartDataSourceDataEventArgs) Handles pivotGridControl1.CustomChartDataSourceData
-
-		End Sub
-
-
-		Private hotTrackPoint As New Point(-1, -1)
+        Private hotTrackPoint As New Point(-1, -1)
 		Private Sub chartControl1_ObjectHotTracked(ByVal sender As Object, ByVal e As DevExpress.XtraCharts.HotTrackEventArgs) Handles chartControl1.ObjectHotTracked
 			Dim point As SeriesPoint = TryCast(e.AdditionalObject, SeriesPoint)
 			If point Is Nothing Then
@@ -64,11 +59,7 @@ Namespace WindowsApplication53
 			End If
 		End Sub
 
-		Private Sub pivotGridControl1_CustomDrawCell(ByVal sender As Object, ByVal e As DevExpress.XtraPivotGrid.PivotCustomDrawCellEventArgs) Handles pivotGridControl1.CustomDrawCell
-
-		End Sub
-
-		Private Sub pivotGridControl1_CustomAppearance(ByVal sender As Object, ByVal e As DevExpress.XtraPivotGrid.PivotCustomAppearanceEventArgs) Handles pivotGridControl1.CustomAppearance
+        Private Sub pivotGridControl1_CustomAppearance(ByVal sender As Object, ByVal e As DevExpress.XtraPivotGrid.PivotCustomAppearanceEventArgs) Handles pivotGridControl1.CustomAppearance
 			If hotTrackPoint = New Point(-1, -1) Then
 				Return
 			End If
