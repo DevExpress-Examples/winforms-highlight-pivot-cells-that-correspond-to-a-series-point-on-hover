@@ -63,14 +63,11 @@ Namespace WindowsApplication53
 			Me.pivotGridControl1.Name = "pivotGridControl1"
 			Me.pivotGridControl1.OptionsChartDataSource.SelectionOnly = False
 			Me.pivotGridControl1.Size = New System.Drawing.Size(418, 292)
-			Me.pivotGridControl1.TabIndex = 0
-'			Me.pivotGridControl1.CustomDrawCell += New DevExpress.XtraPivotGrid.PivotCustomDrawCellEventHandler(Me.pivotGridControl1_CustomDrawCell);
-'			Me.pivotGridControl1.CustomAppearance += New DevExpress.XtraPivotGrid.PivotCustomAppearanceEventHandler(Me.pivotGridControl1_CustomAppearance);
-'			Me.pivotGridControl1.CustomChartDataSourceData += New DevExpress.XtraPivotGrid.PivotCustomChartDataSourceDataEventHandler(Me.pivotGridControl1_CustomChartDataSourceData);
-			' 
-			' dataSet1
-			' 
-			Me.dataSet1.DataSetName = "NewDataSet"
+            Me.pivotGridControl1.TabIndex = 0
+            ' 
+            ' dataSet1
+            ' 
+            Me.dataSet1.DataSetName = "NewDataSet"
 			Me.dataSet1.Tables.AddRange(New System.Data.DataTable() { Me.dataTable1})
 			' 
 			' dataTable1

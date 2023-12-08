@@ -40,11 +40,6 @@ namespace WindowsApplication53
             myTable.Rows.Add(new object[] { "Ccc", DateTime.Today.AddDays(2), 22 });
         }
 
-        private void pivotGridControl1_CustomChartDataSourceData(object sender, DevExpress.XtraPivotGrid.PivotCustomChartDataSourceDataEventArgs e)
-        {
-
-        }
-
 
         Point hotTrackPoint = new Point(-1, -1);
         private void chartControl1_ObjectHotTracked(object sender, DevExpress.XtraCharts.HotTrackEventArgs e)
@@ -70,11 +65,6 @@ namespace WindowsApplication53
         {
             if (cell != new Point(-1, -1))
                 pivot.Invalidate(pivot.Cells.GetCellInfo(cell.X, cell.Y).Bounds);
-        }
-
-        private void pivotGridControl1_CustomDrawCell(object sender, DevExpress.XtraPivotGrid.PivotCustomDrawCellEventArgs e)
-        {
-
         }
 
         private void pivotGridControl1_CustomAppearance(object sender, DevExpress.XtraPivotGrid.PivotCustomAppearanceEventArgs e)
