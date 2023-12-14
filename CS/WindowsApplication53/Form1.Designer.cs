@@ -73,9 +73,7 @@ namespace WindowsApplication53
             this.pivotGridControl1.OptionsChartDataSource.SelectionOnly = false;
             this.pivotGridControl1.Size = new System.Drawing.Size(418, 292);
             this.pivotGridControl1.TabIndex = 0;
-            this.pivotGridControl1.CustomDrawCell += new DevExpress.XtraPivotGrid.PivotCustomDrawCellEventHandler(this.pivotGridControl1_CustomDrawCell);
             this.pivotGridControl1.CustomAppearance += new DevExpress.XtraPivotGrid.PivotCustomAppearanceEventHandler(this.pivotGridControl1_CustomAppearance);
-            this.pivotGridControl1.CustomChartDataSourceData += new DevExpress.XtraPivotGrid.PivotCustomChartDataSourceDataEventHandler(this.pivotGridControl1_CustomChartDataSourceData);
             // 
             // dataSet1
             // 
