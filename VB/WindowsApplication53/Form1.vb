@@ -1,15 +1,13 @@
 Imports System
-Imports System.ComponentModel
 Imports System.Data
 Imports System.Drawing
-Imports System.Windows.Forms
 Imports DevExpress.XtraCharts
 Imports DevExpress.XtraPivotGrid
 
 Namespace WindowsApplication53
 
-    Public Partial Class Form1
-        Inherits Form
+    Partial Public Class Form1
+        Inherits DevExpress.XtraEditors.XtraForm
 
         Public Sub New()
             InitializeComponent()

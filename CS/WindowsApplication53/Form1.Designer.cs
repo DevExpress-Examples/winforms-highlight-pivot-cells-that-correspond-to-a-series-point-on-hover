@@ -72,7 +72,7 @@ namespace WindowsApplication53
             this.pivotGridControl1.Location = new System.Drawing.Point(0, 0);
             this.pivotGridControl1.Name = "pivotGridControl1";
             this.pivotGridControl1.OptionsChartDataSource.SelectionOnly = false;
-            this.pivotGridControl1.Size = new System.Drawing.Size(418, 292);
+            this.pivotGridControl1.Size = new System.Drawing.Size(392, 288);
             this.pivotGridControl1.TabIndex = 0;
             this.pivotGridControl1.CustomAppearance += new DevExpress.XtraPivotGrid.PivotCustomAppearanceEventHandler(this.pivotGridControl1_CustomAppearance);
             // 
@@ -106,7 +106,8 @@ namespace WindowsApplication53
             // 
             // fiedName
             // 
-            this.fiedName.AreaIndex = 1;
+            this.fiedName.Area = DevExpress.XtraPivotGrid.PivotArea.ColumnArea;
+            this.fiedName.AreaIndex = 0;
             this.fiedName.FieldName = "Name";
             this.fiedName.Name = "fiedName";
             // 
@@ -129,8 +130,7 @@ namespace WindowsApplication53
             // 
             // fieldValue1
             // 
-            this.fieldValue1.Area = DevExpress.XtraPivotGrid.PivotArea.DataArea;
-            this.fieldValue1.AreaIndex = 1;
+            this.fieldValue1.AreaIndex = 2;
             this.fieldValue1.Caption = "Count";
             this.fieldValue1.FieldName = "Value";
             this.fieldValue1.Name = "fieldValue1";
@@ -138,7 +138,7 @@ namespace WindowsApplication53
             // 
             // fieldValue2
             // 
-            this.fieldValue2.AreaIndex = 2;
+            this.fieldValue2.AreaIndex = 1;
             this.fieldValue2.Caption = "Average";
             this.fieldValue2.FieldName = "Value";
             this.fieldValue2.Name = "fieldValue2";
@@ -169,8 +169,8 @@ namespace WindowsApplication53
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.chartControl1);
-            this.splitContainer1.Size = new System.Drawing.Size(796, 292);
-            this.splitContainer1.SplitterDistance = 418;
+            this.splitContainer1.Size = new System.Drawing.Size(748, 288);
+            this.splitContainer1.SplitterDistance = 392;
             this.splitContainer1.TabIndex = 1;
             // 
             // chartControl1
@@ -181,7 +181,7 @@ namespace WindowsApplication53
             xyDiagram1.AxisX.DateTimeScaleOptions.ScaleMode = DevExpress.XtraCharts.ScaleMode.Automatic;
             xyDiagram1.AxisX.Title.Text = "Date";
             xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram1.AxisY.Title.Text = "Sum Count";
+            xyDiagram1.AxisY.Title.Text = "Sum";
             xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
             this.chartControl1.Diagram = xyDiagram1;
             this.chartControl1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -200,7 +200,7 @@ namespace WindowsApplication53
             this.chartControl1.SeriesTemplate.Label = sideBySideBarSeriesLabel1;
             this.chartControl1.SeriesTemplate.SeriesDataMember = "Series";
             this.chartControl1.SeriesTemplate.ValueDataMembersSerializable = "Values";
-            this.chartControl1.Size = new System.Drawing.Size(374, 292);
+            this.chartControl1.Size = new System.Drawing.Size(352, 288);
             this.chartControl1.TabIndex = 0;
             this.chartControl1.ToolTipEnabled = DevExpress.Utils.DefaultBoolean.True;
             this.chartControl1.ObjectHotTracked += new DevExpress.XtraCharts.HotTrackEventHandler(this.chartControl1_ObjectHotTracked);
@@ -209,7 +209,7 @@ namespace WindowsApplication53
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(796, 292);
+            this.ClientSize = new System.Drawing.Size(748, 288);
             this.Controls.Add(this.splitContainer1);
             this.Name = "Form1";
             this.Text = "Form1";
